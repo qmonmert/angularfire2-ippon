@@ -1,11 +1,19 @@
-<ul>
-  <li *ngFor="let item of items | async">
-    <input type="text" [value]="item.text" #updateitem>
-    <button (click)="updateItem(item.$key, updateitem.value)">Update</button>
-    <button (click)="deleteItem(item.$key)">Delete</button>
-  </li>
-</ul>
+<div style="border: 1px solid gray; margin: 5px; padding: 5px;">
+  
+  <h3>Angularfire2IpponAppComponent</h3>
 
-<input type="text" #newitem />
-<button (click)="addItem(newitem.value)">Add</button>
-<button (click)="deleteAllItems()">Delete All</button>
+  <ul>
+    <li *ngFor="let item of items | async">
+      <input type="text" [value]="item.text" #updateitem>
+      <button (click)="updateItem(item.$key, updateitem.value)">Update</button>
+      <button (click)="deleteItem(item.$key)">Delete</button>
+    </li>
+  </ul>
+
+  <input type="text" #newitem />
+  <button (click)="addItem(newitem.value)">Add</button>
+  <button (click)="deleteAllItems()">Delete All</button>
+    
+  <app-items-observable></app-items-observable>  
+
+</div>
