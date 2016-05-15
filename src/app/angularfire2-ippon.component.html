@@ -1,5 +1,11 @@
-<ul *ngFor="let item of items | async">
-  <li class="text">
-    {{item.$value}}
+<ul>
+  <li *ngFor="let item of items | async">
+    <input type="text" [value]="item.text" #updateitem>
+    <button (click)="updateItem(item.$key, updateitem.value)">Update</button>
+    <button (click)="deleteItem(item.$key)">Delete</button>
   </li>
 </ul>
+
+<input type="text" #newitem />
+<button (click)="addItem(newitem.value)">Add</button>
+<button (click)="deleteAllItems()">Delete All</button>
