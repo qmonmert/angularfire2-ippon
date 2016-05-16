@@ -1,6 +1,7 @@
 # Projet AngularFire2
 
 Ce projet reprend l'ensemble des exemples présentés dans mon article sur le blog d'[Ippon](http://blog.ippon.fr/)
+
 Versions utilisées dans ce projet :
 
 | Frameworks   | Versions     | 
