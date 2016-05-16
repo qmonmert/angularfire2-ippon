@@ -9,5 +9,27 @@
         "item3": {
           "text": "Visual Studio Code"
         }
+    },
+    "items-observable": {
+        "item1": {
+          "type": "Framework",  
+          "text": "Angular"
+        },
+        "item2": {
+          "type": "IDE",  
+          "text": "Visual Studio Code"
+        },
+        "item3": {
+          "type": "Framework",  
+          "text": "Ember"
+        },
+        "item4": {
+          "type": "IDE",  
+          "text": "IntelliJ Idea"
+        },
+        "item5": {
+          "type": "Framework",  
+          "text": "Backbone"
+        }
     }
 }

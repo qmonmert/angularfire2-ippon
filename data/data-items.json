@@ -1,0 +1,13 @@
+{
+    "items": {
+        "item1": {
+          "text": "Angularjs 2"
+        },
+        "item2": {
+          "text": "Firebase"
+        },
+        "item3": {
+          "text": "Visual Studio Code"
+        }
+    }
+}
