@@ -1,0 +1,12 @@
+<div style="border: 1px solid gray; margin: 5px; padding: 5px;">
+  
+  <div *ngIf="!(af.auth | async)">
+    <button (click)='login()'>Login with Twitter</button>
+  </div>
+  
+  <div *ngIf="af.auth | async">
+    Hello {{ username }}
+    <button (click)='logout()'>Logout</button>
+  </div>
+
+</div>

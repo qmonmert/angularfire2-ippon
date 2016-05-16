@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
 import { ItemsObservableComponent } from './items-observable/items-observable.component';
+import { AuthenticationTwitterComponent } from './authentication-twitter/authentication-twitter.component';
 
 @Component({
   moduleId: module.id,
   selector: 'angularfire2-ippon-app',
   templateUrl: 'angularfire2-ippon.component.html',
-  directives: [ItemsObservableComponent]
+  directives: [ItemsObservableComponent, AuthenticationTwitterComponent]
 })
 export class Angularfire2IpponAppComponent {
 
