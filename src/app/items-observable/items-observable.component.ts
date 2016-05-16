@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
 import { Subject } from 'rxjs/Subject';
 
@@ -10,20 +10,20 @@ import { Subject } from 'rxjs/Subject';
 export class ItemsObservableComponent {
 
   items: FirebaseListObservable<any[]>;
-  sizeSubject: Subject<any>;
+  typeSubject: Subject<any>;
   
   constructor(af: AngularFire) {
-    this.sizeSubject = new Subject();
+    this.typeSubject = new Subject();
     this.items = af.database.list('/items-observable', {
       query: {
         orderByChild: 'type',
-        equalTo: this.sizeSubject
+        equalTo: this.typeSubject
       }
     });
   }
 
   filterBy(type: string) {
-    this.sizeSubject.next(type); 
+    this.typeSubject.next(type); 
   }
 
 }
